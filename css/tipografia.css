@@ -1,0 +1,149 @@
+@font-face {
+  font-family: 'Roboto';
+  src: url("./assets/fonts/Roboto-Light.woff2") format("woff2"), url("./assets/fonts/Roboto-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Roboto Condensed';
+  src: url('assets/fonts/RobotoCondensed-Regular.woff2') format('woff2'),
+      url('assets/fonts/RobotoCondensed-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto Slab';
+  src: url("./assets/fonts/RobotoSlab-Regular.woff2") format("woff2"), url("./assets/fonts/Regular/RobotoSlab-Regular.woff");
+  font-weight: 400;
+  font-style: normal; }
+
+
+  /* Configuración general */
+
+  html {
+    font-size: 10px;
+  
+  }
+
+  body {
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  a{
+    text-decoration: none;
+  }
+
+  p {
+    font-size: 1.8rem;
+    line-height: 1.8;
+  }
+
+  h1 {
+    font-family: 'Roboto Slab', serif;
+  }
+  
+  h2 {
+    font-size: 2.4rem;
+    font-family: 'Roboto Condensed';
+   
+  }
+
+  
+/*------------Inputs-----------*/
+input,
+textarea{
+
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 20px;
+
+}
+
+/*--------------NAVIGATION-----------*/
+nav a{
+  font-weight: bolder;
+
+}
+
+nav ul{
+
+  list-style: none;
+
+}
+
+
+  /*---------top nav----------*/
+
+  nav.top-nav{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 2rem;
+  }
+  
+  .active{
+    font-size: 2.1rem;
+  }
+  
+
+/*-------------BANNER-----------*/
+
+.texto-banner h1{
+  font-size: 10rem;
+}
+.texto-banner h3{
+  font-size: 32px;
+  font-family: 'Roboto Condensed', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.titulo-banner{
+  font-size: 64px;
+}
+
+
+  /*---------central nav----------*/
+
+  #central-nav li{
+    font-size: 2.6rem;
+    font-weight: bolder;
+  }
+
+/*-------SECTIONS------------------*/
+
+.section-heading{
+  font-size: 3.2rem;
+}
+
+      /*-----------cards----------*/
+      
+      .card-description a{
+        font-size: 2rem;
+      }
+    
+/*----------button read more-----------*/
+.btn-read-more{
+  font-size: 1.4rem;
+  font-weight: 900;
+}
+
+
+/*------------aside anuncio-------*/
+
+.anuncio p{
+  font-weight: bolder;
+}
+
+
+
+/*-------------FOOTER-----------*/
+
+
+footer li{
+  list-style: none;
+}
+
+footer a{
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+footer a:hover{
+  text-decoration: underline;
+}
