@@ -115,6 +115,9 @@
   --transpNegraMin: rgba(0, 0, 0, 0.2);
 }
 
+*{
+  box-sizing: border-box;
+}
 html{
   font-size: 10px;
 }
@@ -144,8 +147,6 @@ h1, h2, h3, h4, h5, h6{
   font-family:'Alfa Slab One', Impact, Haettenschweiler, sans-serif ;
 }
 
-
-
 a h2{
   font-size: clamp(1.6rem, 1.6rem + 2vw, 2rem);
 }
@@ -172,7 +173,7 @@ li a,
 .btn-read-more{
   font-family: 'Reforma2018', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-weight: bold;
-  font-size: clamp(1.1rem, 1.1rem + 1.5vw, 2rem);
+  font-size: clamp(1.1rem, 1.1rem + 1.5vw, 1.8rem);
   letter-spacing: -.1rem;
 }
 
@@ -214,6 +215,7 @@ li a,
 h1{
   font-size: clamp(3.4rem, 3.4rem + 3vw, 6rem);
 }
+
 /*--------------MAIN------------*/
 
 .envoltorio{
@@ -227,6 +229,24 @@ main{
 section{
   margin-bottom: 4rem;
 }
+
+.en-portada article{
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 3rem;
+}
+
+.en-portada article>div{
+  flex: 1;
+  min-width: 320px;
+}
+
+.en-portada article .ultima-img{
+  
+}
+
 h2.section-heading{
   font-family: 'Reforma2018';
   letter-spacing: -.1rem;
@@ -265,6 +285,7 @@ h2.section-heading span{
 }
 
 .btn-read-more{
+  font-size: clamp(1.1rem, 1.1rem + 1.5vw, 1.6rem);
   padding: .5rem 1rem;
   box-shadow: 2px 2px 2px var(--transpNegraMin);
   border-radius: 5px;
@@ -274,14 +295,28 @@ h2.section-heading span{
 hr{
   width: 80%;
 }
+.penultimo{
+  max-width:1000px;
+  margin: 0 auto 3rem;
 
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
 .penultimo>div{
-  margin-bottom: 3rem;
+  padding: 3rem;
 }
 .anuncio{
   text-align: center;
+  min-width: 300px;
+  max-width: 500px;
 }
-
+@media (min-width: 690px){
+  .anuncio{
+    border-right: 2px solid var(--negroUniversal)
+  }
+}
 .anuncio p{
   margin-bottom: 1rem;
 }
@@ -306,7 +341,6 @@ hr{
 
 .licencia{
   text-align: center;
-
   padding: 10px 0 0;
 }
 
