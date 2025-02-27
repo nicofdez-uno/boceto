@@ -1,4 +1,236 @@
+/* Webfont: Reforma2018 Blanca */@font-face {
+  font-family: 'Reforma2018';
+  src: url('../assets/fonts/') format('woff2'), /* /* Super Modern Browsers */
+       url('../assets/fonts/Reforma2018/Reforma2018-Blanca.woff') format('woff'), /* Modern Browsers */
+       url('../assets/fonts/Reforma2018/Reforma2018-Blanca.eot') format('woff'),
+       url('../assets/fonts/Reforma2018/Reforma2018-Blanca.ttf') format('truetype');	 /* Safari, Android, iOS */
+  font-style: normal;
+  font-weight: 300;
+  text-rendering: optimizeLegibility;
+}
+
+
+/* Webfont: Reforma2018 BlancaItalica */@font-face {
+  font-family: 'Reforma2018';
+  src: url('../assets/fonts/Reforma2018/Reforma2018-BlancaItalica.woff2') format('woff2'), /* /* Super Modern Browsers */
+       url('../assets/fonts/Reforma2018/Reforma2018-BlancaItalica.woff') format('woff'), /* Modern Browsers */
+       url('../assets/fonts/Reforma2018/Reforma2018-BlancaItalica.eot') format('woff'),
+       url('../assets/fonts/Reforma2018/Reforma2018-BlancaItalica.ttf') format('truetype');     /* Safari, Android, iOS */
+  font-style: italic;
+  font-weight: 300;
+  text-rendering: optimizeLegibility;
+}
+
+/* Webfont: Reforma2018 Gris */@font-face {
+  font-family: 'Reforma2018';
+  src: url('../assets/fonts/Reforma2018/Reforma2018-Gris.woff2') format('woff2'), /* /* Super Modern Browsers */
+       url('../assets/fonts/Reforma2018/Reforma2018-Gris.woff') format('woff'), /* Modern Browsers */
+       url('../assets/fonts/Reforma2018/Reforma2018-Gris.eot') format('woff'),
+       url('../assets/fonts/Reforma2018/Reforma2018-Gris.ttf') format('truetype');	 /* Safari, Android, iOS */
+  font-style: normal;
+  font-weight: 500;
+  text-rendering: optimizeLegibility;
+}
+
+/* Webfont: Reforma2018 GrisItalica */@font-face {
+  font-family: 'Reforma2018';
+  src: url('../assets/fonts/Reforma2018/Reforma2018-GrisItalica.woff2') format('woff2'), /* /* Super Modern Browsers */
+       url('../assets/fonts/Reforma2018/Reforma2018-GrisItalica.woff') format('woff'), /* Modern Browsers */
+       url('../assets/fonts/Reforma2018/Reforma2018-GrisItalica.eot') format('woff'),
+       url('../assets/fonts/Reforma2018/Reforma2018-GrisItalica.ttf') format('truetype');     /* Safari, Android, iOS */
+  font-style: italic;
+  font-weight: 500;
+  text-rendering: optimizeLegibility;
+}
+
+/* Webfont: Reforma2018 Negra */@font-face {
+  font-family: 'Reforma2018';
+  src: url('../assets/fonts/Reforma2018/Reforma2018-Negra.woff2') format('woff2'), /* /* Super Modern Browsers */
+       url('../assets/fonts/Reforma2018/Reforma2018-Negra.woff') format('woff'), /* Modern Browsers */
+       url('../assets/fonts/Reforma2018/Reforma2018-Negra.eot') format('woff'),
+       url('../assets/fonts/Reforma2018/Reforma2018-Negra.ttf') format('truetype');	 /* Safari, Android, iOS */
+  font-style: normal;
+  font-weight: 700;
+  text-rendering: optimizeLegibility;
+}
+
+/* Webfont: Reforma2018 NegraItalica */@font-face {
+  font-family: 'Reforma2018';
+  src: url('../assets/fonts/Reforma2018/Reforma2018-NegraItalica.woff2') format('woff2'), /* /* Super Modern Browsers */
+       url('../assets/fonts/Reforma2018/Reforma2018-NegraItalica.woff') format('woff'), /* Modern Browsers */
+       url('../assets/fonts/Reforma2018/Reforma2018-NegraItalica.eot') format('woff'),
+       url('../assets/fonts/Reforma2018/Reforma2018-NegraItalica.ttf') format('truetype');     /* Safari, Android, iOS */
+  font-style: italic;
+  font-weight: 700;
+  text-rendering: optimizeLegibility;
+}
+
+@font-face {
+  font-family: 'Quattrocento Sans';
+  src: url('../assets/fonts/QuattrocentoSans-Bold.woff2') format('woff2'),
+      url('../assets/fonts/QuattrocentoSans-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Quattrocento Sans';
+  src: url('../assets/fonts/QuattrocentoSans-Italic.woff2') format('woff2'),
+      url('../assets/fonts/QuattrocentoSans-Italic.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Quattrocento Sans';
+  src: url('../assets/fonts/QuattrocentoSans-BoldItalic.woff2') format('woff2'),
+      url('../assets/fonts/QuattrocentoSans-BoldItalic.woff') format('woff');
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Quattrocento Sans';
+  src: url('../assets/fonts/QuattrocentoSans.woff2') format('woff2'),
+      url('../assets/fonts/QuattrocentoSans.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Alfa Slab One';
+  src: url('../assets/fonts/AlfaSlabOne-Regular.woff2') format('woff2'),
+      url('../assets/fonts/AlfaSlabOne-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 html{
   font-size: 10px;
 }
 
+body{
+  margin: 0;
+  font-size: clamp(1.1rem, 1.1rem + 2vw, 2rem);
+  font-family: 'Reforma2018';
+  font-weight: 300;
+}
+
+img{
+  display: block;
+  max-width: 100%;
+}
+
+p{
+   line-height: 1.5;
+}
+
+ul{
+  margin: 0;
+  padding: 0;
+}
+
+li{
+  list-style: none;
+  padding: .5rem 0;
+}
+
+/*-----------NAVEGACIONES------------*/
+
+ul{
+  text-align: center;
+}
+
+.logo-img{
+  display: none;
+}
+
+.menu-top{
+  display: flex;
+  display: none;
+  gap: 1rem;
+  justify-content: end;
+  padding: 1rem 2rem;
+}
+
+.menu-centro{
+  display: flex;
+  display: none;
+  justify-content: center;
+  gap: 1rem;
+}
+/*-------------BANNER----------*/
+.banner{
+  padding: 5rem 0;
+}
+.titulo-banner{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.texto-banner h3{
+  text-align: center;
+}
+.texto-banner h1, 
+.texto-banner h3{
+  margin: 0;
+}
+/*--------------MAIN------------*/
+
+main{
+  padding: 5rem 1rem;
+}
+
+.card{
+  padding: 3rem 1rem;
+}
+/*-----------FOOTER--------------*/
+
+hr{
+  width: 80%;
+}
+
+.penultimo>div{
+  margin-bottom: 3rem;
+}
+.anuncio{
+  text-align: center;
+}
+
+.anuncio p{
+  margin-bottom: 1rem;
+}
+.anuncio img{
+  padding-bottom: 2rem;
+}
+.bichi-libros{
+  display: flex;
+  justify-content: center;
+  gap: 10px
+}
+
+.contactos{
+  text-align: center;
+}
+
+.contactos img{
+  height: 50px;
+  display: inline-block;
+  padding-bottom: 2rem;
+}
+
+.licencia{
+  text-align: center;
+
+  padding: 10px 0 0;
+}
+
+.licencia img{
+  height: 30px;
+  display: inline-block;
+}
