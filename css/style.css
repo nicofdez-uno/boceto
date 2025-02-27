@@ -110,14 +110,19 @@
   font-display: swap;
 }
 
+:root{
+  --negroUniversal: #222;
+  --transpNegraMin: rgba(0, 0, 0, 0.2);
+}
+
 html{
   font-size: 10px;
 }
 
 body{
   margin: 0;
-  font-size: clamp(1.1rem, 1.1rem + 2vw, 2rem);
-  font-family: 'Reforma2018';
+  font-size: clamp(1rem, 1rem + 1.5vw, 1.8rem);
+  font-family:'Reforma2018', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-weight: 300;
 }
 
@@ -126,8 +131,23 @@ img{
   max-width: 100%;
 }
 
+a{
+  text-decoration: none;
+  color: var(--negroUniversal);
+}
+
 p{
    line-height: 1.5;
+}
+
+h1, h2, h3, h4, h5, h6{
+  font-family:'Alfa Slab One', Impact, Haettenschweiler, sans-serif ;
+}
+
+
+
+a h2{
+  font-size: clamp(1.6rem, 1.6rem + 2vw, 2rem);
 }
 
 ul{
@@ -137,13 +157,23 @@ ul{
 
 li{
   list-style: none;
-  padding: .5rem 0;
+  padding: .7rem 0;
 }
+
+
 
 /*-----------NAVEGACIONES------------*/
 
 ul{
   text-align: center;
+}
+
+li a,
+.btn-read-more{
+  font-family: 'Reforma2018', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: bold;
+  font-size: clamp(1.1rem, 1.1rem + 1.5vw, 2rem);
+  letter-spacing: -.1rem;
 }
 
 .logo-img{
@@ -180,14 +210,64 @@ ul{
 .texto-banner h3{
   margin: 0;
 }
+
+h1{
+  font-size: clamp(3.4rem, 3.4rem + 3vw, 6rem);
+}
 /*--------------MAIN------------*/
 
+.envoltorio{
+  max-width: 1000px;
+  margin: auto;
+}
 main{
   padding: 5rem 1rem;
 }
 
-.card{
-  padding: 3rem 1rem;
+section{
+  margin-bottom: 4rem;
+}
+h2.section-heading{
+  font-family: 'Reforma2018';
+  letter-spacing: -.1rem;
+  font-size: clamp(2rem, 2rem + 1vw, 4rem);
+  border-left: 3px solid var(--negroUniversal);
+  border-right: 3px solid var(--negroUniversal);
+  padding: .5rem 2rem;
+  display: inline-block;
+}
+
+h2.section-heading span{
+  font-family: 'Alfa Slab One';
+  font-size: clamp(1.9rem, 1.9rem + 1vw, 3rem);
+}
+
+.fila{
+  --grid-min-col-size: 430px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(var(--grid-min-col-size), 100%), 1fr));
+  gap: 1.5rem;
+}
+
+.sub-fila{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.sub-fila .card{
+  padding: 2rem 1rem;
+  box-shadow: 4px 4px 4px var(--transpNegraMin);
+
+  min-height: 300px;
+  flex: 1;
+  min-width: 200px;
+}
+
+.btn-read-more{
+  padding: .5rem 1rem;
+  box-shadow: 2px 2px 2px var(--transpNegraMin);
+  border-radius: 5px;
 }
 /*-----------FOOTER--------------*/
 
