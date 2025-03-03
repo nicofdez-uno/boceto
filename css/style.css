@@ -1,6 +1,6 @@
 /* Webfont: Reforma2018 Blanca */@font-face {
   font-family: 'Reforma2018';
-  src: url('../assets/fonts/') format('woff2'), /* /* Super Modern Browsers */
+  src: url('../assets/fonts/Reforma2018/Reforma2018-Blanca.woff2') format('woff2'), /* /* Super Modern Browsers */
        url('../assets/fonts/Reforma2018/Reforma2018-Blanca.woff') format('woff'), /* Modern Browsers */
        url('../assets/fonts/Reforma2018/Reforma2018-Blanca.eot') format('woff'),
        url('../assets/fonts/Reforma2018/Reforma2018-Blanca.ttf') format('truetype');	 /* Safari, Android, iOS */
@@ -108,11 +108,20 @@
   font-weight: normal;
   font-style: normal;
   font-display: swap;
+
 }
 
 :root{
   --negroUniversal: #222;
   --transpNegraMin: rgba(0, 0, 0, 0.2);
+  --blancoUniversal: whitesmoke;
+
+  --fontSizeBasic: clamp(.9rem, 1rem + 1.1vw, 1.7rem);
+  --fontSizeButton: clamp(.9rem, 1rem + 1.1vw, 1.6rem);
+  --fontSizeMenu: clamp(1rem, 1rem + 1.2vw, 1.7rem);
+  --fontSizeH1: clamp(3.4rem, 5rem + 3vw, 8rem);
+  --fontSizeH2: clamp(2rem, 2.2rem + 2vw, 4rem);
+  --fontSizeH3: clamp(1.2rem, 1.2rem + 2vw, 2rem);
 }
 
 *{
@@ -124,7 +133,8 @@ html{
 
 body{
   margin: 0;
-  font-size: clamp(1rem, 1rem + 1.5vw, 1.8rem);
+  background-color: var(--blancoUniversal);
+  font-size: var(--fontSizeBasic);
   font-family:'Reforma2018', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-weight: 300;
 }
@@ -148,7 +158,7 @@ h1, h2, h3, h4, h5, h6{
 }
 
 a h2{
-  font-size: clamp(1.6rem, 1.6rem + 2vw, 2rem);
+  font-size: var(--fontSizeH2);
 }
 
 ul{
@@ -165,29 +175,40 @@ li{
 
 /*-----------NAVEGACIONES------------*/
 
+.top-nav{
+  height: 80px;
+  padding: 3rem 4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-img{
+  width: 150px;
+}
+
+.icon{
+  width: 30px;
+}
+
+.menu-top{
+  display: none;
+  gap: 2rem;
+  justify-content: end;
+  padding: 1rem 2rem;
+}
+
 ul{
   text-align: center;
 }
 
-li a,
-.btn-read-more{
+li a{
   font-family: 'Reforma2018', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-weight: bold;
-  font-size: clamp(1.1rem, 1.1rem + 1.5vw, 1.8rem);
+  font-size: var(--fontSizeMenu);
   letter-spacing: -.1rem;
 }
 
-.logo-img{
-  display: none;
-}
-
-.menu-top{
-  display: flex;
-  display: none;
-  gap: 1rem;
-  justify-content: end;
-  padding: 1rem 2rem;
-}
 
 .menu-centro{
   display: flex;
@@ -213,7 +234,7 @@ li a,
 }
 
 h1{
-  font-size: clamp(3.4rem, 3.4rem + 3vw, 6rem);
+  font-size: var(--fontSizeH1);
 }
 
 /*--------------MAIN------------*/
@@ -243,14 +264,10 @@ section{
   min-width: 320px;
 }
 
-.en-portada article .ultima-img{
-  
-}
-
 h2.section-heading{
   font-family: 'Reforma2018';
   letter-spacing: -.1rem;
-  font-size: clamp(2rem, 2rem + 1vw, 4rem);
+  font-size: var(--fontSizeH2);
   border-left: 3px solid var(--negroUniversal);
   border-right: 3px solid var(--negroUniversal);
   padding: .5rem 2rem;
@@ -259,7 +276,7 @@ h2.section-heading{
 
 h2.section-heading span{
   font-family: 'Alfa Slab One';
-  font-size: clamp(1.9rem, 1.9rem + 1vw, 3rem);
+  font-size: var(--fontSizeH2);
 }
 
 .fila{
@@ -281,15 +298,19 @@ h2.section-heading span{
 
   min-height: 300px;
   flex: 1;
-  min-width: 200px;
+  min-width: 220px;
 }
 
 .btn-read-more{
-  font-size: clamp(1.1rem, 1.1rem + 1.5vw, 1.6rem);
+  font-family: 'Reforma2018', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: bold;
+  font-size: var(--fontSizeButton);
+  letter-spacing: -.1rem;
   padding: .5rem 1rem;
   box-shadow: 2px 2px 2px var(--transpNegraMin);
   border-radius: 5px;
 }
+
 /*-----------FOOTER--------------*/
 
 hr{
@@ -297,48 +318,53 @@ hr{
 }
 .penultimo{
   max-width:1000px;
-  margin: 0 auto 3rem;
+  margin: 2rem auto;
+}
 
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  flex-wrap: wrap;
-}
 .penultimo>div{
-  padding: 3rem;
-}
-.anuncio{
+  padding: 0 3rem;
   text-align: center;
-  min-width: 300px;
-  max-width: 500px;
 }
-@media (min-width: 690px){
-  .anuncio{
-    border-right: 2px solid var(--negroUniversal)
-  }
+
+.anuncio{
+  width: 80%;
+  margin: auto;
+  border-bottom: 2px solid var(--negroUniversal);
 }
+
 .anuncio p{
   margin-bottom: 1rem;
 }
+
 .anuncio img{
   padding-bottom: 2rem;
 }
+
 .bichi-libros{
   display: flex;
   justify-content: center;
   gap: 10px
 }
 
+.bichi-libros img{
+  width: 100px;
+}
 .contactos{
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
 }
 
-.contactos img{
-  height: 50px;
-  display: inline-block;
-  padding-bottom: 2rem;
+.footer-logo{
+  padding: 3rem 0 1.5rem;
+
 }
 
+.footer-logo img{
+  width: 100px;
+}
 .licencia{
   text-align: center;
   padding: 10px 0 0;
@@ -347,4 +373,31 @@ hr{
 .licencia img{
   height: 30px;
   display: inline-block;
+}
+
+
+@media (min-width: 690px){
+
+  .menu-top{
+    display: flex;
+  }
+
+  .icon #hamburguesa{
+    display: none;
+  }
+  .penultimo{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .anuncio{
+    border-right: 2px solid var(--negroUniversal);
+    border-bottom: none;
+    width: 60%;
+  }
+  .contactos{
+    width: 40%;
+  }
 }
