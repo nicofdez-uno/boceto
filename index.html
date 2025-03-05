@@ -11,12 +11,57 @@
   <link rel="stylesheet" href="css/maquetado.css"> -->
 </head>
 <body>
+ 
+  <header class="cabecera">
+      <!------------------BARRA DE NAVEGACION------------------->
+    <nav class="top-nav">
+      <div class="logo-img">
+        <a href="">
+          <img src="./assets/img/web/bichilogo-gris.png" alt="logo del sitio">
+        </a>
+      </div>
+      <div class="icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 99.75 97.32" id="hamburguesa">
+          <g>
+            <path d="M89.32 0H10.43a10.43 10.43 0 0 0 0 20.85h78.9A10.43 10.43 0 0 0 89.32 0zm0 38.23H10.43a10.43 10.43 0 0 0 0 20.85h78.9a10.43 10.43 0 0 0 0-20.85zm0 38.24H10.43a10.43 10.43 0 0 0 0 20.85h78.9a10.43 10.43 0 0 0 0-20.85z"></path>
+          </g>
+        </svg>
+      </div>
+      <ul class="menu-top">
+        <li><a href="#">Autores</a></li>
+        <li><a href="#">Catálogo</a></li>
+        <li id="searchbox"> 
+          <input type="text" placeholder="Busca aquí">
+        </li>
+        <li>
+          <div class="icon">
+            <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" id="search"  x="0" y="0" fill="#000" version="1.1" viewBox="0 0 48 48">
+              <path d="M46.599 40.236L36.054 29.691C37.89 26.718 39 23.25 39 19.5 39 8.73 30.27 0 19.5 0S0 8.73 0 19.5 8.73 39 19.5 39c3.75 0 7.218-1.11 10.188-2.943l10.548 10.545a4.501 4.501 0 0 0 6.363-6.366zM19.5 33C12.045 33 6 26.955 6 19.5S12.045 6 19.5 6 33 12.045 33 19.5 26.955 33 19.5 33z"></path>
+            </svg>
+          </div>
+        </li>
+      </ul>
+    </nav><!---top nav-->
+   
+    
+      <!------------------menu central------------------->
 
-      <!------------------MENU OCULTO------------------->
+    <nav class="central-nav">
+      <ul class="menu-centro">
+        <li class="active"><a  href="#">Inicio</a></li>
+        <li><a href="#">Bicheratura</a></li>
+        <li><a href="#">Divulgando</a></li>
+      </ul>
+    </nav>
+  </header>
 
-  <div id="slideout-menu">
+  <!------------------CONTENIDO------------------->  
+
+  <!------------------MENU OCULTO------------------->
+
+  <div class="slideout-menu">
     <ul>
-      <li><a class="active" href="#">Inicio</a></li>
+      <li class="active"><a  href="#">Inicio</a></li>
       <li><a href="#">Bicheratura</a></li>
       <li><a href="#">Divulgando</a></li>
       <li><a href="#">Autores</a></li>
@@ -26,67 +71,6 @@
       </li>
     </ul>
   </div><!---slideou-menu-->
-
-
-    <!------------------BARRA DE NAVEGACION------------------->
-  <nav class="top-nav">
-    <div class="logo-img">
-      <a href="">
-        <img src="./assets/img/web/bichilogo-negro.png" alt="logo del sitio">
-      </a>
-    </div>
-    <div class="icon">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 99.75 97.32" id="hamburguesa">
-        <g>
-          <path d="M89.32 0H10.43a10.43 10.43 0 0 0 0 20.85h78.9A10.43 10.43 0 0 0 89.32 0zm0 38.23H10.43a10.43 10.43 0 0 0 0 20.85h78.9a10.43 10.43 0 0 0 0-20.85zm0 38.24H10.43a10.43 10.43 0 0 0 0 20.85h78.9a10.43 10.43 0 0 0 0-20.85z"></path>
-        </g>
-      </svg>
-    </div>
-    <ul class="menu-top">
-      <li><a href="#">Autores</a></li>
-      <li><a href="#">Catálogo</a></li>
-      <li>
-        <div class="icon">
-          <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" id="search"  x="0" y="0" fill="#000" version="1.1" viewBox="0 0 48 48">
-            <path d="M46.599 40.236L36.054 29.691C37.89 26.718 39 23.25 39 19.5 39 8.73 30.27 0 19.5 0S0 8.73 0 19.5 8.73 39 19.5 39c3.75 0 7.218-1.11 10.188-2.943l10.548 10.545a4.501 4.501 0 0 0 6.363-6.366zM19.5 33C12.045 33 6 26.955 6 19.5S12.045 6 19.5 6 33 12.045 33 19.5 26.955 33 19.5 33z"></path>
-          </svg>
-        </div>
-      </li>
-    </ul>
-  </nav><!---top nav-->
-  <div id="searchbox">
-    <input type="text" placeholder="Busca aquí">
-  </div>
- 
-  <!-----------------BANNER------------------->
-
-  <div class="banner">
-    <div class="texto-banner">
-      <div class="titulo-banner">
-       
-        <h1>Bichoteca</h1>
-      
-      </div>
-      <h3>Cosas de bichos</h3>
-    </div>
-    
-  </div><!---banner-->
-
-
-  <!------------------CONTENIDO------------------->
-
-  <div class="envoltorio">
-
-    <!------------------menu central------------------->
-
-      <nav id="central-nav">
-        <ul class="menu-centro">
-          <li><a class="active" href="#">Inicio</a></li>
-          <li><a href="#">Bicheratura</a></li>
-          <li><a href="#">Divulgando</a></li>
-        </ul>
-      </nav>
-
       <!------------------entradas------------------->
 
       <main>
@@ -94,169 +78,150 @@
         <!------------------ultima entrada------------------->
 
         <section class="en-portada">
-          <article class="bicheratura">
-            <div class="ultima-img">
-              <a href="#">
-                <img src="./assets/img/contenidos/img-1.jpg" alt="Card image">
-              </a>
-            </div>
-            <div class="card-description">
-              <a href="#">
+          <div class="contenedor-portada">
+            <div class="letrero"></div>
+            <div class="autor-div"></div>
+            <article class="bicheratura">
+              <div class="img-portada">
+                <a href="#">
+                  <img src="./assets/img/contenidos/img-1.jpg" alt="Card image">
+                </a>
+              </div>
+              <div class="card-description">
                 <h2 class="titulo-inicio">Título de la última entrada</h2>
-                <h3>Nombre del autor</h3>
-              </a>
-              <p>Cray food truck brunch, XOXO +1 keffiyeh pickled chambray waistcoat ennui. Organic small batch paleo 8-bit. Intelligentsia umami</p>
-              <a href="#" class="btn-read-more">Sigue leyendo</a>
-            </div>
-          </article>
+                <p>Cray food truck brunch, XOXO +1 keffiyeh pickled chambray waistcoat ennui. Organic small batch paleo 8-bit. Intelligentsia umami</p>
+                <p class="boton"><a href="#">Sigue leyendo</a></p>
+             
+              </div>
+            </article>
+          </div>
         </section><!---ultima entrada-->
 
           <!------------------seccion bicheratura------------------->
 
         <section class="biblioteca bicheratura">
-          <h2 class="section-heading">Últimas entradas en <a href="#"><span>Bicheratura</span></a></h2>
-          <div class="fila">
-            <div class="sub-fila">
-              <article class="card">
-                <div class="card-image">
-                  <a href="#">
-                    <img src="./assets/img/contenidos/img-1.jpg" alt="Card image">
-                  </a>
-                </div>
-                <div class="card-description">
-                  <a href="#">
-                    <h3>Elogio de la mosca</h3>
-                  </a>
-                  <p>Cray food truck brunch, XOXO +1 keffiyeh pickled chambray waistcoat ennui. Organic small batch paleo 8-bit. Intelligentsia umami</p>
-                  <a href="#" class="btn-read-more">Sigue leyendo</a>
-                </div>
-              </article>
-              <article class="card">
-                <div class="card-image">
-                  <a href="#">
-                    <img src="./assets/img/contenidos/img-1.jpg" alt="Card image">
-                  </a>
-                </div>
-                <div class="card-description">
-                  <a href="#">
-                    <h3>The blog title here</h3>
-                  </a>
-                  <p>Trust fund celiac farm-to-table PBR&amp;B. Brunch art party mumblecore, fingerstache cred echo park literally stumptown humblebrag chambray. Mlkshk vinyl distillery humblebrag crucifix.</p>
-                  <a href="#" class="btn-read-more">Sigue leyendo</a>
-                </div>
-              </article>
-            </div>
-            <div class="sub-fila">
-              <article class="card">
-                <div class="card-image">
-                  <a href="#">
-                    <img src="./assets/img/contenidos/img-1.jpg" alt="Card image">
-                  </a>
-                </div>
-                <div class="card-description">
-                  <a href="#">
-                    <h3>The blog title here</h3>
-                  </a>
-                  <p>Trust fund celiac farm-to-table PBR&amp;B. Brunch art party mumblecore, fingerstache cred echo park literally stumptown humblebrag chambray. Mlkshk vinyl distillery humblebrag crucifix.</p>
-                  <a href="#" class="btn-read-more">Sigue leyendo</a>
-                </div>
-              </article>
-              <article class="card">
-                <div class="card-image">
-                  <a href="#">
-                    <img src="./assets/img/contenidos/img-1.jpg" alt="Card image">
-                  </a>
-                </div>
-                <div class="card-description">
-                  <a href="#">
-                    <h3>The blog title here</h3>
-                  </a>
-                  <p>Trust fund celiac farm-to-table PBR&amp;B. Brunch art party mumblecore, fingerstache cred echo park literally stumptown humblebrag chambray. Mlkshk vinyl distillery humblebrag crucifix.</p>
-                  <a href="#" class="btn-read-more">Sigue leyendo</a>
-                </div>
-              </article>
+          <div class="envoltorio">
+            <h2 class="section-heading">Últimas entradas en <a href="#"><span>Bicheratura</span></a></h2>
+            <div class="fila">
+              <div class="sub-fila">
+                <article class="card">
+                  <div class="card-image">
+                    <a href="#">
+                      <img src="./assets/img/contenidos/img-1.jpg" alt="Card image">
+                    </a>
+                  </div>
+                  <div class="card-description">
+     
+                      <h3>Elogio de la mosca</h3>
+                      <h4>Luciano de Samosata</h4>
+                  </div>
+                </article>
+                <article class="card">
+                  <div class="card-image">
+                    <a href="#">
+                      <img src="./assets/img/contenidos/img-1.jpg" alt="Card image">
+                    </a>
+                  </div>
+                  <div class="card-description">
+                      <h3>El águila y el escarabajo</h3>
+                      <h4>Esopo</h4>
+                  </div>
+                </article>
+              </div>
+              <div class="sub-fila">
+                <article class="card">
+                  <div class="card-image">
+                    <a href="#">
+                      <img src="./assets/img/contenidos/img-1.jpg" alt="Card image">
+                    </a>
+                  </div>
+                  <div class="card-description">
+                      <h3>Carta de una hormiga esclavista</h3>
+                      <h4>Santiago Ramón y Cajal</h4>
+                  </div>
+                </article>
+                <article class="card">
+                  <div class="card-image">
+                    <a href="#">
+                      <img src="./assets/img/contenidos/img-1.jpg" alt="Card image">
+                    </a>
+                  </div>
+                  <div class="card-description">
+                      <h3>La pulga y el filósofo</h3>
+                      <h4>Esopo</h4>
+                  </div>
+                </article>
+              </div>
             </div>
           </div>
-
         </section>
 
         <!-----------------seccion divulgando------------------->
 
         <section class="biblioteca divulgando">
-          <h2 class="section-heading">Últimas entradas en <a href="#"><span>Divulgando</span></a></h2>
-          <div class="fila">
-            <div class="sub-fila">
-              <article class="card">
-                <div class="card-image">
-                  <a href="#">
-                    <img src="./assets/img/contenidos/img-1.jpg" alt="Card image">
-                  </a>
-                </div>
-                <div class="card-description">
-                  <a href="#">
+          <div class="envoltorio">
+            <h2 class="section-heading">Últimas entradas en <a href="#"><span>Divulgando</span></a></h2>
+            <div class="fila">
+              <div class="sub-fila">
+                <article class="card">
+                  <div class="card-image">
+                    <a href="#">
+                      <img src="./assets/img/contenidos/img-1.jpg" alt="Card image">
+                    </a>
+                  </div>
+                  <div class="card-description">
+                      <h3>The blog title here</h3>
+                      <h4>The blog title here</h4>
+                  
+                  </div>
+                </article>
+                <article class="card">
+                  <div class="card-image">
+                    <a href="#">
+                      <img src="./assets/img/contenidos/img-1.jpg" alt="Card image">
+                    </a>
+                  </div>
+                  <div class="card-description">
+                      <h3>The blog title here</h3>
+                      <h4>The blog title here</h4>
+                  </div>
+                </article>
+              </div>
+              <div class="sub-fila">
+                <article class="card">
+                  <div class="card-image">
+                    <a href="#">
+                      <img src="./assets/img/contenidos/img-1.jpg" alt="Card image">
+                    </a>
+                  </div>
+                  <div class="card-description">
                     <h3>The blog title here</h3>
-                  </a>
-                  <p>Cray food truck brunch, XOXO +1 keffiyeh pickled chambray waistcoat ennui. Organic small batch paleo 8-bit. Intelligentsia umami</p>
-                  <a href="#" class="btn-read-more">Sigue leyendo</a>
-                </div>
-              </article>
-              <article class="card">
-                <div class="card-image">
-                  <a href="#">
-                    <img src="./assets/img/contenidos/img-1.jpg" alt="Card image">
-                  </a>
-                </div>
-                <div class="card-description">
-                  <a href="#">
+                    <h4>The blog title here</h4>
+                  </div>
+                </article>
+                <article class="card">
+                  <div class="card-image">
+                    <a href="#">
+                      <img src="./assets/img/contenidos/img-1.jpg" alt="Card image">
+                    </a>
+                  </div>
+                  <div class="card-description">
                     <h3>The blog title here</h3>
-                  </a>
-                  <p>Trust fund celiac farm-to-table PBR&amp;B. Brunch art party mumblecore, fingerstache cred echo park literally stumptown humblebrag chambray. Mlkshk vinyl distillery humblebrag crucifix.</p>
-                  <a href="#" class="btn-read-more">Sigue leyendo</a>
-                </div>
-              </article>
-            </div>
-            <div class="sub-fila">
-              <article class="card">
-                <div class="card-image">
-                  <a href="#">
-                    <img src="./assets/img/contenidos/img-1.jpg" alt="Card image">
-                  </a>
-                </div>
-                <div class="card-description">
-                  <a href="#">
-                    <h3>The blog title here</h3>
-                  </a>
-                  <p>Trust fund celiac farm-to-table PBR&amp;B. Brunch art party mumblecore, fingerstache cred echo park literally stumptown humblebrag chambray. Mlkshk vinyl distillery humblebrag crucifix.</p>
-                  <a href="#" class="btn-read-more">Sigue leyendo</a>
-                </div>
-              </article>
-              <article class="card">
-                <div class="card-image">
-                  <a href="#">
-                    <img src="./assets/img/contenidos/img-1.jpg" alt="Card image">
-                  </a>
-                </div>
-                <div class="card-description">
-                  <a href="#">
-                    <h3>The blog title here</h3>
-                  </a>
-                  <p>Trust fund celiac farm-to-table PBR&amp;B. Brunch art party mumblecore, fingerstache cred echo park literally stumptown humblebrag chambray. Mlkshk vinyl distillery humblebrag crucifix.</p>
-                  <a href="#" class="btn-read-more">Sigue leyendo</a>
-                </div>
-              </article>
-            </div>
+                    <h4>The blog title here</h4>
+                  </div>
+                </article>
+              </div>
+            </div> 
           </div>
         </section>
 
       </main>
-    </div><!-----envoltorio-->
 
     <!------------------FOOTER------------------->
-    <hr>
   <footer>
     <div class="penultimo">
       <div class="anuncio">
-        <p>Ayuda al mantenimiento de la Bichoteca comprando uno de nuestros libros</p>
+        <p>Ayuda al mantenimiento de la <span>Bichoteca</span> comprando uno de nuestros libros</p>
         <div class="bichi-libros">
           <a href="https://www.amazon.es/Recuerdos-entomol%C3%B3gicos-Primera-serie-completa/dp/B0D8858J7R/258-9505235-7246930"><img src="./assets/img/web/recuerdos-I.jpg" alt=""></a>
           <a href="https://www.amazon.es/Recuerdos-entomol%C3%B3gicos-Segunda-serie-completa/dp/B0DSL52KT2/258-9505235-7246930"><img src="./assets/img/web/recuerdos-II.jpg" alt=""></a>
@@ -264,7 +229,7 @@
       </div>
       <div class="contactos">
         <div class="footer-logo">
-          <img src="./assets/img/web/bichilogo-negro.png" alt="">
+          <img src="./assets/img/web/bichilogo-grisLetra.png" alt="">
         </div>
         <ul>
           <li><a href="#">Quiénes somos</a></li>
@@ -272,7 +237,6 @@
         </ul>
       </div>
     </div>
-    <hr>
     <div class="licencia">
       <img src="./assets/img/web/licencia.png" alt="">
     </div>
