@@ -1,0 +1,124 @@
+html{
+  font-size: 10px;
+}
+
+
+body{
+  font-size: 1.6rem;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.container{
+  display: flex;
+}
+
+.gama{
+  flex: 1;
+}
+.muestra{
+  padding: 2rem;
+  color: white;
+  text-align: center;
+}
+
+.azul>:first-child{
+  background-color: #0a2a37;
+}
+.azul>:nth-child(2){
+  background-color: #232f3c;
+}
+.azul>:nth-child(3){
+  background-color: #273443;;
+}
+.azul>:nth-child(4){
+  background-color: #2f4857;
+}
+.azul>:nth-child(5){
+  background-color: #0080a5;
+}
+.azul>:nth-child(6){
+  background-color: #cbe3e8;;
+  color: #2f4857;
+}
+.azul>:nth-child(7){
+  background-color: #f3f7f8;
+  color: #2f4857;
+}
+
+.azul>:last-child{
+  background-color: #3a5575;
+ 
+}
+
+.marron>:first-child{
+  background-color: #4b2b1c;
+}
+.marron>:nth-child(2){
+  background-color: #583829;
+}
+
+.marron>:nth-child(4){
+  background-color: #8e5c38;
+}
+
+.marron>:nth-child(5){
+  background-color: #b49771;
+}
+
+.marron>:nth-child(6){
+  background-color: #efe9c8;
+}
+
+.verde>:first-child{
+  background-color: #0a350a;
+}
+.verde>:nth-child(2){
+  background-color: #296125;
+}
+
+.verde>:nth-child(4){
+  background-color: olive;
+}
+
+.verde>:nth-child(5){
+  background-color: #759242;
+}
+
+.verde>:nth-child(6){
+  background-color: #c3df9d;
+}
+.verde>:nth-child(7){
+  background-color: #e1f3c3;
+}
+.verde>:last-child{
+  background-color: #c3df9d;
+}
+
+
+.gris>:first-child{
+  background-color: #293737;
+}
+.gris>:nth-child(2){
+  background-color: #414141;
+}
+.gris>:nth-child(3){
+  background-color: #515252;
+}
+.gris>:nth-child(4){
+  background-color: #686a68;
+}
+.gris>:nth-child(5){
+  background-color: #91918F;
+}
+.gris>:nth-child(6){
+  background-color: #d4d4cd;
+}
+.gris>:nth-child(7){
+  background-color: #f4eee9;
+  color: #222;
+}
+
+.gris>:last-child{
+
+ 
+}

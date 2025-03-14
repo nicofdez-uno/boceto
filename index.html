@@ -3,47 +3,68 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bichiteca</title>
+  <title>Bichiteca - en pruebas</title>
   <link rel="icon" href="/assets/img/web/icono.png ">
-  <link rel="stylesheet" href="css/style.css">
-  <!-- <link rel="stylesheet" href="css/colores.css">
-  <link rel="stylesheet" href="css/tipografia.css">
-  <link rel="stylesheet" href="css/maquetado.css"> -->
+
+  <link rel="stylesheet" href="./css/estilos.css">
+
+  <style>
+    .aspect-ratio{
+      background-color: green;
+      aspect-ratio: 6/3;
+    }
+  </style>
+ 
 </head>
 <body>
- 
   <header class="cabecera">
       <!------------------BARRA DE NAVEGACION------------------->
     <nav class="top-nav">
       <div class="logo-img">
         <a href="">
-          <img src="./assets/img/web/bichilogo-gris.png" alt="logo del sitio">
+          <img src="./assets/img/web/bichilogo-negro.png" alt="logo del sitio">
         </a>
       </div>
       <div class="icon">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 99.75 97.32" id="hamburguesa">
+        <svg viewBox="0 0 26.458333 26.458333">
           <g>
-            <path d="M89.32 0H10.43a10.43 10.43 0 0 0 0 20.85h78.9A10.43 10.43 0 0 0 89.32 0zm0 38.23H10.43a10.43 10.43 0 0 0 0 20.85h78.9a10.43 10.43 0 0 0 0-20.85zm0 38.24H10.43a10.43 10.43 0 0 0 0 20.85h78.9a10.43 10.43 0 0 0 0-20.85z"></path>
+            <path
+               style="stroke-width:2.3;stroke-linecap:round"
+               d="M 3.2508012,0.04512517 C 1.4498222,0.04512517 1.6666666e-7,1.4949482 1.6666666e-7,3.2959262 1.6666666e-7,5.0969042 1.4498222,6.5468392 3.2508012,6.5468392 H 23.207532 c 1.800977,0 3.250801,-1.449935 3.250801,-3.250913 0,-1.800978 -1.449824,-3.25080103 -3.250801,-3.25080103 z m 0,9.93312803 c -1.800979,0 -3.25080103333334,1.4499348 -3.25080103333334,3.2509128 0,1.800979 1.44982203333334,3.2508 3.25080103333334,3.2508 H 23.207532 c 1.800977,0 3.250801,-1.449821 3.250801,-3.2508 0,-1.800978 -1.449824,-3.2509128 -3.250801,-3.2509128 z m 0,9.9332398 C 1.4498222,19.911493 1.6666666e-7,21.361429 1.6666666e-7,23.162407 1.6666666e-7,24.963384 1.4498222,26.413208 3.2508012,26.413208 H 23.207532 c 1.800977,0 3.250801,-1.449824 3.250801,-3.250801 0,-1.800978 -1.449824,-3.250914 -3.250801,-3.250914 z"/>
           </g>
         </svg>
       </div>
+     
       <ul class="menu-top">
         <li><a href="#">Autores</a></li>
         <li><a href="#">Catálogo</a></li>
-        <li id="searchbox"> 
-          <input type="text" placeholder="Busca aquí">
-        </li>
         <li>
           <div class="icon">
-            <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" id="search"  x="0" y="0" fill="#000" version="1.1" viewBox="0 0 48 48">
+            <svg  class="search" viewBox="0 0 48 48">
               <path d="M46.599 40.236L36.054 29.691C37.89 26.718 39 23.25 39 19.5 39 8.73 30.27 0 19.5 0S0 8.73 0 19.5 8.73 39 19.5 39c3.75 0 7.218-1.11 10.188-2.943l10.548 10.545a4.501 4.501 0 0 0 6.363-6.366zM19.5 33C12.045 33 6 26.955 6 19.5S12.045 6 19.5 6 33 12.045 33 19.5 26.955 33 19.5 33z"></path>
             </svg>
           </div>
         </li>
       </ul>
+      
     </nav><!---top nav-->
-   
+    <div class="searchbox"> 
+      <input type="text" placeholder="Busca aquí">
+    </div>
     
+     <!------------------MENU OCULTO------------------->
+  <nav class="hidden-nav">
+    <ul id="hidden-menu" class="hidden-menu">
+      <li class="active hidden-menu__item"><a class="hidden-menu__link" href="#">Inicio</a></li>
+      <li class="hidden-menu__item"><a class="hidden-menu__link" href="#">Bicheratura</a></li>
+      <li class="hidden-menu__item"><a class="hidden-menu__link" href="#">Divulgando</a></li>
+      <li class="hidden-menu__item"><a class="hidden-menu__link" href="#">Autores</a></li>
+      <li class="hidden-menu__item"><a class="hidden-menu__link" href="#">Catálogo</a></li>
+      <li class="hidden-menu__item">
+        <input type="text" placeholder="Busca aquí"><br>
+      </li>
+    </ul>
+  </nav><!---hidden-nav------>
       <!------------------menu central------------------->
 
     <nav class="central-nav">
@@ -55,190 +76,311 @@
     </nav>
   </header>
 
-  <!------------------CONTENIDO------------------->  
-
-  <!------------------MENU OCULTO------------------->
-
-  <div class="slideout-menu">
-    <ul>
-      <li class="active"><a  href="#">Inicio</a></li>
-      <li><a href="#">Bicheratura</a></li>
-      <li><a href="#">Divulgando</a></li>
-      <li><a href="#">Autores</a></li>
-      <li><a href="#">Catálogo</a></li>
-      <li>
-        <input type="text" placeholder="Busca aquí"><br>
-      </li>
-    </ul>
-  </div><!---slideou-menu-->
-      <!------------------entradas------------------->
-
-      <main>
+  <!------------------CONTENIDO------------------->
 
         <!------------------ultima entrada------------------->
 
-        <section class="en-portada">
-          <div class="contenedor-portada">
-            <div class="letrero"></div>
-            <div class="autor-div"></div>
-            <article class="bicheratura">
-              <div class="img-portada">
-                <a href="#">
-                  <img src="./assets/img/contenidos/img-1.jpg" alt="Card image">
-                </a>
-              </div>
-              <div class="card-description">
-                <h2 class="titulo-inicio">Título de la última entrada</h2>
-                <p>Cray food truck brunch, XOXO +1 keffiyeh pickled chambray waistcoat ennui. Organic small batch paleo 8-bit. Intelligentsia umami</p>
-                <p class="boton"><a href="#">Sigue leyendo</a></p>
-             
-              </div>
-            </article>
+  <section class="last-entry">
+    <div class="envoltorio divulgando">
+      <div class="billboard-wrapper">
+        <div class="billboard-text">
+          <p>Lo último en <span class="bichoteca">Bichoteca</span></p>
+        </div>
+        <div class="billboard-image">
+          <img src="./assets/img/contenidos/img-1.jpg" alt="Card image">
+        </div>
+        <div class="author-div">
+          <div class="author-name">
+            <p>Perico de los palotes</p>
           </div>
-        </section><!---ultima entrada-->
-
-          <!------------------seccion bicheratura------------------->
-
-        <section class="biblioteca bicheratura">
-          <div class="envoltorio">
-            <h2 class="section-heading">Últimas entradas en <a href="#"><span>Bicheratura</span></a></h2>
-            <div class="fila">
-              <div class="sub-fila">
-                <article class="card">
-                  <div class="card-image">
-                    <a href="#">
-                      <img src="./assets/img/contenidos/img-1.jpg" alt="Card image">
-                    </a>
-                  </div>
-                  <div class="card-description">
-     
-                      <h3>Elogio de la mosca</h3>
-                      <h4>Luciano de Samosata</h4>
-                  </div>
-                </article>
-                <article class="card">
-                  <div class="card-image">
-                    <a href="#">
-                      <img src="./assets/img/contenidos/img-1.jpg" alt="Card image">
-                    </a>
-                  </div>
-                  <div class="card-description">
-                      <h3>El águila y el escarabajo</h3>
-                      <h4>Esopo</h4>
-                  </div>
-                </article>
-              </div>
-              <div class="sub-fila">
-                <article class="card">
-                  <div class="card-image">
-                    <a href="#">
-                      <img src="./assets/img/contenidos/img-1.jpg" alt="Card image">
-                    </a>
-                  </div>
-                  <div class="card-description">
-                      <h3>Carta de una hormiga esclavista</h3>
-                      <h4>Santiago Ramón y Cajal</h4>
-                  </div>
-                </article>
-                <article class="card">
-                  <div class="card-image">
-                    <a href="#">
-                      <img src="./assets/img/contenidos/img-1.jpg" alt="Card image">
-                    </a>
-                  </div>
-                  <div class="card-description">
-                      <h3>La pulga y el filósofo</h3>
-                      <h4>Esopo</h4>
-                  </div>
-                </article>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <!-----------------seccion divulgando------------------->
-
-        <section class="biblioteca divulgando">
-          <div class="envoltorio">
-            <h2 class="section-heading">Últimas entradas en <a href="#"><span>Divulgando</span></a></h2>
-            <div class="fila">
-              <div class="sub-fila">
-                <article class="card">
-                  <div class="card-image">
-                    <a href="#">
-                      <img src="./assets/img/contenidos/img-1.jpg" alt="Card image">
-                    </a>
-                  </div>
-                  <div class="card-description">
-                      <h3>The blog title here</h3>
-                      <h4>The blog title here</h4>
-                  
-                  </div>
-                </article>
-                <article class="card">
-                  <div class="card-image">
-                    <a href="#">
-                      <img src="./assets/img/contenidos/img-1.jpg" alt="Card image">
-                    </a>
-                  </div>
-                  <div class="card-description">
-                      <h3>The blog title here</h3>
-                      <h4>The blog title here</h4>
-                  </div>
-                </article>
-              </div>
-              <div class="sub-fila">
-                <article class="card">
-                  <div class="card-image">
-                    <a href="#">
-                      <img src="./assets/img/contenidos/img-1.jpg" alt="Card image">
-                    </a>
-                  </div>
-                  <div class="card-description">
-                    <h3>The blog title here</h3>
-                    <h4>The blog title here</h4>
-                  </div>
-                </article>
-                <article class="card">
-                  <div class="card-image">
-                    <a href="#">
-                      <img src="./assets/img/contenidos/img-1.jpg" alt="Card image">
-                    </a>
-                  </div>
-                  <div class="card-description">
-                    <h3>The blog title here</h3>
-                    <h4>The blog title here</h4>
-                  </div>
-                </article>
-              </div>
-            </div> 
-          </div>
-        </section>
-
-      </main>
-
-    <!------------------FOOTER------------------->
-  <footer>
-    <div class="penultimo">
-      <div class="anuncio">
-        <p>Ayuda al mantenimiento de la <span>Bichoteca</span> comprando uno de nuestros libros</p>
-        <div class="bichi-libros">
-          <a href="https://www.amazon.es/Recuerdos-entomol%C3%B3gicos-Primera-serie-completa/dp/B0D8858J7R/258-9505235-7246930"><img src="./assets/img/web/recuerdos-I.jpg" alt=""></a>
-          <a href="https://www.amazon.es/Recuerdos-entomol%C3%B3gicos-Segunda-serie-completa/dp/B0DSL52KT2/258-9505235-7246930"><img src="./assets/img/web/recuerdos-II.jpg" alt=""></a>
+          <div class="author-portrait">
+            <img src="./assets/img/contenidos/esopo.png">
+          </div> 
         </div>
       </div>
-      <div class="contactos">
-        <div class="footer-logo">
-          <img src="./assets/img/web/bichilogo-grisLetra.png" alt="">
-        </div>
-        <ul>
-          <li><a href="#">Quiénes somos</a></li>
-          <li><a href="#">Contáctanos</a></li>
-        </ul>
+    
+      <article >                
+        <h1 class="title last-entry-title">Título de la última entrada</h1>
+        <p class="last-entry-excerpt">Cray food truck brunch, XOXO +1 keffiyeh pickled chambray waistcoat ennui. Organic small batch paleo 8-bit. Intelligentsia umami Título de lOrganic small batch paleo 8-bit. Intelligentsia umami Título de la última entrada
+        </p>
+        <p class="btn last-entry-btn"><a href="#">Sigue leyendo</a></p>
+      </article>
+    </div>
+  </section><!---ultima entrada-->
+
+       <!------------------seccion bicheratura------------------->
+
+  <section class="biblioteca bicheratura">
+  <div class="envoltorio">
+    <h2 class="section-heading">Últimas entradas en <a href="#"><span>Bicheratura</span></a></h2>
+    <div class="fila">
+      <div class="sub-fila">
+        <article class="card">
+          <div class="card-image">
+              <img src="./assets/img/contenidos/img-1.jpg" alt="Card image">
+          </div>
+          <div class="card-description">
+              <h3>Elogio de la mosca</h3>
+              <h4>Luciano de Samosata</h4>
+          </div>
+        </article>
+        <article class="card">
+          <div class="card-image">
+            <img src="./assets/img/contenidos/img-1.jpg" alt="Card image">
+          </div>
+          <div class="card-description">
+              <h3>El águila y el escarabajo</h3>
+              <h4>Esopo</h4>
+          </div>
+        </article>
+      </div>
+      <div class="sub-fila">
+        <article class="card">
+          <div class="card-image">
+            <img src="./assets/img/contenidos/img-1.jpg" alt="Card image">
+          </div>
+          <div class="card-description">
+              <h3>Carta de una hormiga esclavista</h3>
+              <h4>Santiago Ramón y Cajal</h4>
+          </div>
+        </article>
+        <article class="card">
+          <div class="card-image">
+            <img src="./assets/img/contenidos/img-1.jpg" alt="Card image">
+          </div>
+          <div class="card-description">
+              <h3>La pulga y el filósofo</h3>
+              <h4>Esopo</h4>
+          </div>
+        </article>
       </div>
     </div>
+  </div>
+  </section>
+
+   <!-----------------seccion divulgando------------------->
+
+   <section class="biblioteca divulgando">
+    <div class="envoltorio">
+      <h2 class="section-heading">Últimas entradas en <a href="#"><span>Divulgando</span></a></h2>
+      <div class="fila">
+        <div class="sub-fila">
+          <article class="card">
+            <div class="card-image">
+              <a href="#">
+                <img src="./assets/img/contenidos/img-1.jpg" alt="Card image">
+              </a>
+            </div>
+            <div class="card-description">
+                <h3>The blog title here</h3>
+                <h4>The blog title here</h4>
+            
+            </div>
+          </article>
+          <article class="card">
+            <div class="card-image">
+              <a href="#">
+                <img src="./assets/img/contenidos/img-1.jpg" alt="Card image">
+              </a>
+            </div>
+            <div class="card-description">
+                <h3>The blog title here</h3>
+                <h4>The blog title here</h4>
+            </div>
+          </article>
+        </div>
+        <div class="sub-fila">
+          <article class="card">
+            <div class="card-image">
+              <a href="#">
+                <img src="./assets/img/contenidos/img-1.jpg" alt="Card image">
+              </a>
+            </div>
+            <div class="card-description">
+              <h3>The blog title here</h3>
+              <h4>The blog title here</h4>
+            </div>
+          </article>
+          <article class="card">
+            <div class="card-image">
+              <a href="#">
+                <img src="./assets/img/contenidos/img-1.jpg" alt="Card image">
+              </a>
+            </div>
+            <div class="card-description">
+              <h3>The blog title here</h3>
+              <h4>The blog title here</h4>
+            </div>
+          </article>
+        </div>
+      </div> 
+    </div>
+  </section>
+  
+    <!------------------FOOTER------------------->
+    
+  <footer>
+    <div class="penultimo">
+  
+        <div class="anuncio">
+          <p>Ayuda al mantenimiento de la <span class="bichoteca">Bichoteca</span> comprando uno de nuestros libros</p>
+          <div class="bichi-libros">
+            <a href="https://www.amazon.es/Recuerdos-entomol%C3%B3gicos-Primera-serie-completa/dp/B0D8858J7R/258-9505235-7246930" target="_blank"><img src="./assets/img/web/recuerdos-I.jpg" alt=""></a>
+            <a href="https://www.amazon.es/Recuerdos-entomol%C3%B3gicos-Segunda-serie-completa/dp/B0DSL52KT2/258-9505235-7246930" target="_blank"><img src="./assets/img/web/recuerdos-II.jpg" alt=""></a>
+          </div>
+        </div>
+        <div class="contactos">
+          <div class="footer-logo">
+            <svg
+              width="150px"
+              viewBox="0 0 107 50">
+              <defs
+                id="defs1">
+                <clipPath
+                  clipPathUnits="userSpaceOnUse"
+                  id="clipPath1">
+                  <path
+                    id="path2"
+                    style=" fill-opacity:1;fill-rule:evenodd;stroke-width:5.3984;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:0;paint-order:markers stroke fill"
+                    d="m 66.574227,126.85635 c 4e-6,5.71483 -5.927664,10.34763 -13.239815,10.34763 -7.31215,0 -7.968033,-4.75373 -7.968029,-10.46857 6e-6,-5.71484 0.655885,-10.22668 7.968029,-10.22668 7.312143,0 13.239809,4.63279 13.239815,10.34762 z"
+                    sodipodi:nodetypes="sssss" />
+                </clipPath>
+                <clipPath
+                  clipPathUnits="userSpaceOnUse"
+                  id="clipPath3">
+                  <path
+                    id="path4"
+                    style=" fill-opacity:1;fill-rule:evenodd;stroke-width:5.86069;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:0;paint-order:markers stroke fill"
+                    d="m 64.784943,112.68526 c 0,3.28898 -4.730812,5.95524 -10.566567,5.95524 -5.835754,0 -7.759943,-3.25188 -7.759941,-6.54086 -2e-6,-3.289 1.924187,-5.36963 7.759941,-5.36963 5.835755,0 10.566567,2.66626 10.566567,5.95525 z"
+                    sodipodi:nodetypes="sssss" />
+                </clipPath>
+              </defs>
+              <g
+                id="g44"
+                transform="translate(-32.25944,-94.545966)"
+                inkscape:export-filename="bichilogo.png"
+                inkscape:export-xdpi="96"
+                inkscape:export-ydpi="96">
+                <g
+                  id="g11"
+                  transform="translate(0.24505792,-0.52916667)">
+                  <ellipse
+                    style=" fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:2.7471;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:0;stroke-opacity:1;paint-order:markers stroke fill"
+                    id="ellipse28"
+                    cx="100.20725"
+                    cy="126.54747"
+                    rx="2.614217"
+                    ry="11.529317" />
+                  <ellipse
+                    style=" fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:2.33716;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:0;stroke-opacity:1;paint-order:markers stroke fill"
+                    id="ellipse29"
+                    cx="100.20725"
+                    cy="112.81293"
+                    rx="4.7305202"
+                    ry="5.2405982" />
+                  <g
+                    id="g32"
+                    transform="matrix(0.8471261,0,0,0.8471261,-0.575628,15.726463)"
+                    style=" fill-opacity:1;stroke:none;stroke-opacity:1">
+                    <ellipse
+                      style=" fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:0;stroke-opacity:1;paint-order:markers stroke fill"
+                      id="ellipse31"
+                      cx="103.94184"
+                      cy="112.98026"
+                      rx="13.758485"
+                      ry="3.1132338" />
+                    <ellipse
+                      style=" fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:0;stroke-opacity:1;paint-order:markers stroke fill"
+                      id="ellipse32"
+                      cx="73.27597"
+                      cy="139.28644"
+                      rx="13.758485"
+                      ry="3.1132338"
+                      transform="rotate(-13.682103)" />
+                  </g>
+                  <g
+                    id="g34"
+                    transform="matrix(-0.8471261,0,0,0.8471261,200.02946,15.556315)"
+                    style=" fill-opacity:1;stroke:none;stroke-opacity:1">
+                    <ellipse
+                      style=" fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:0;stroke-opacity:1;paint-order:markers stroke fill"
+                      id="ellipse33"
+                      cx="103.94184"
+                      cy="112.98026"
+                      rx="13.758485"
+                      ry="3.1132338" />
+                    <ellipse
+                      style=" fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:0;stroke-opacity:1;paint-order:markers stroke fill"
+                      id="ellipse34"
+                      cx="73.27597"
+                      cy="139.28644"
+                      rx="13.758485"
+                      ry="3.1132338"
+                      transform="rotate(-13.682103)" />
+                  </g>
+                  <ellipse
+                    style=" fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:2.06187;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+                    id="ellipse11"
+                    cx="109.64944"
+                    cy="-88.217293"
+                    rx="3.0935805"
+                    ry="5.8040161"
+                    transform="matrix(0.10968049,0.9939669,-0.99907331,0.04304095,0,0)" />
+                </g>
+                <path
+                  d="m 68.37359,121.40066 c 0.7874,0 1.3462,0.18415 1.6764,0.55245 0.3429,0.3683 0.51435,0.79375 0.51435,1.27635 0,0.5842 -0.20955,1.0414 -0.62865,1.3716 -0.4191,0.3175 -1.0033,0.47625 -1.7526,0.47625 -0.7366,0 -1.28905,-0.1778 -1.65735,-0.5334 -0.3556,-0.3556 -0.5334,-0.7747 -0.5334,-1.2573 0,-0.6223 0.2159,-1.0922 0.6477,-1.4097 0.4445,-0.3175 1.02235,-0.47625 1.73355,-0.47625 z m 0.20955,4.24815 c 0.6223,0 1.1049,0.381 1.4478,1.143 0.3556,0.762 0.5334,1.97485 0.5334,3.63855 0,2.0447 -0.22225,3.5179 -0.66675,4.4196 -0.4318,0.9017 -1.0922,1.35255 -1.9812,1.35255 -0.6985,0 -1.21285,-0.3302 -1.54305,-0.9906 -0.3175,-0.6731 -0.47625,-1.8415 -0.47625,-3.5052 0,-2.0447 0.24765,-3.56235 0.74295,-4.55295 0.4953,-1.0033 1.143,-1.50495 1.9431,-1.50495 z m 7.522101,10.57275 c -1.8415,0 -3.19405,-0.4572 -4.05765,-1.3716 -0.8636,-0.9144 -1.2954,-2.1844 -1.2954,-3.81 0,-1.2573 0.254,-2.36855 0.762,-3.33375 0.5207,-0.9779 1.26365,-1.7399 2.22885,-2.286 0.9779,-0.5588 2.1463,-0.8382 3.5052,-0.8382 1.2446,0 2.1971,0.2413 2.8575,0.7239 0.6604,0.4826 0.9906,1.1557 0.9906,2.0193 0,0.6096 -0.2032,1.0922 -0.6096,1.4478 -0.3937,0.3429 -0.9652,0.51435 -1.7145,0.51435 -0.2921,0 -0.5715,-0.006 -0.8382,-0.019 -0.2667,-0.0254 -0.51435,-0.0445 -0.74295,-0.0572 -0.2286,-0.0127 -0.4445,-0.019 -0.6477,-0.019 -0.4699,0 -0.83185,0.1016 -1.08585,0.3048 -0.2413,0.2032 -0.36195,0.508 -0.36195,0.9144 0,0.3683 0.127,0.64135 0.381,0.81915 0.254,0.1778 0.5969,0.2667 1.0287,0.2667 0.1905,0 0.4064,-0.0191 0.6477,-0.0572 0.254,-0.0508 0.5207,-0.0952 0.8001,-0.13335 0.2794,-0.0381 0.55245,-0.0572 0.81915,-0.0572 0.5842,0 1.0668,0.1651 1.4478,0.4953 0.381,0.3175 0.5715,0.7874 0.5715,1.4097 0,0.6223 -0.17145,1.1684 -0.51435,1.6383 -0.3429,0.4572 -0.8636,0.8128 -1.5621,1.0668 -0.6858,0.2413 -1.55575,0.36195 -2.60985,0.36195 z m 7.998348,-15.29715 c 0.7112,0 1.20015,0.19685 1.46685,0.59055 0.2794,0.3937 0.4191,0.9779 0.4191,1.7526 0,0.5334 -0.0381,1.1176 -0.1143,1.7526 -0.318283,2.72291 -0.880676,1.49303 1.0668,0.1905 0.6096,-0.381 1.2573,-0.5715 1.9431,-0.5715 0.6858,0 1.2954,0.17145 1.8288,0.51435 0.5334,0.3302 0.97155,0.84455 1.31445,1.54305 0.2921,0.5715 0.50165,1.2573 0.62865,2.0574 0.1397,0.8001 0.20955,1.55575 0.20955,2.26695 0,1.1811 -0.1143,2.1209 -0.3429,2.8194 -0.2159,0.6985 -0.52705,1.2065 -0.93345,1.524 -0.3937,0.3048 -0.85725,0.4572 -1.39065,0.4572 -1.3335,0 -2.00025,-0.79375 -2.00025,-2.38125 0,-0.5715 0.03175,-1.1557 0.09525,-1.7526 0.0762,-0.5969 0.1143,-1.143 0.1143,-1.6383 0,-0.5207 -0.0889,-0.90805 -0.2667,-1.16205 -0.1778,-0.2667 -0.42545,-0.40005 -0.74295,-0.40005 -0.381,0 -0.69215,0.18415 -0.93345,0.55245 -0.2286,0.3683 -0.3429,0.8763 -0.3429,1.524 0,0.4318 0.0254,0.86995 0.0762,1.31445 0.0635,0.4318 0.09525,0.9525 0.09525,1.5621 0,0.9779 -0.20955,1.68275 -0.62865,2.11455 -0.4064,0.4191 -0.9271,0.62865 -1.5621,0.62865 -0.4191,0 -0.8001,-0.0635 -1.143,-0.1905 -0.3302,-0.127 -0.6096,-0.381 -0.8382,-0.762 -0.2286,-0.3937 -0.4064,-0.97155 -0.5334,-1.73355 -0.0762,-0.4572 -0.14605,-0.9906 -0.20955,-1.6002 -0.0508,-0.6096 -0.1016,-1.2446 -0.1524,-1.905 -0.0381,-0.6731 -0.06985,-1.3208 -0.09525,-1.9431 -0.0254,-0.635 -0.0381,-1.1938 -0.0381,-1.6764 0,-1.8923 0.254,-3.27025 0.762,-4.13385 0.5207,-0.8763 1.27,-1.31445 2.2479,-1.31445 z m 11.522622,0.47625 c 0.7874,0 1.3462,0.18415 1.6764,0.55245 0.3429,0.3683 0.51435,0.79375 0.51435,1.27635 0,0.5842 -0.20955,1.0414 -0.62865,1.3716 -0.4191,0.3175 -1.0033,0.47625 -1.7526,0.47625 -0.7366,0 -1.28905,-0.1778 -1.65735,-0.5334 -0.3556,-0.3556 -0.5334,-0.7747 -0.5334,-1.2573 0,-0.6223 0.2159,-1.0922 0.6477,-1.4097 0.4445,-0.3175 1.02235,-0.47625 1.73355,-0.47625 z m 0.20955,4.24815 c 0.6223,0 1.1049,0.381 1.4478,1.143 0.3556,0.762 0.5334,1.97485 0.5334,3.63855 0,2.0447 -0.22225,3.5179 -0.66675,4.4196 -0.4318,0.9017 -1.0922,1.35255 -1.9812,1.35255 -0.6985,0 -1.21285,-0.3302 -1.54305,-0.9906 -0.3175,-0.6731 -0.47625,-1.8415 -0.47625,-3.5052 0,-2.0447 0.24765,-3.56235 0.74295,-4.55295 0.4953,-1.0033 1.143,-1.50495 1.9431,-1.50495 z"/>
+                <path
+                  d="m 109.29374,136.19551 c -1.5621,0 -2.8067,-0.20955 -3.7338,-0.62865 -0.9271,-0.4191 -1.6002,-1.02235 -2.0193,-1.80975 -0.4064,-0.7874 -0.6096,-1.7272 -0.6096,-2.8194 0,-1.3843 0.28575,-2.55905 0.85725,-3.52425 0.5842,-0.9779 1.37795,-1.7272 2.38125,-2.2479 1.016,-0.5207 2.16535,-0.78105 3.44805,-0.78105 1.524,0 2.6416,0.3048 3.3528,0.9144 0.7112,0.5969 1.0668,1.3843 1.0668,2.3622 0,0.7747 -0.2159,1.4478 -0.6477,2.0193 -0.4191,0.5715 -1.09725,1.02134 -1.77165,1.31445 -0.81029,0.35217 -1.69574,0.40758 -2.60985,0.4572 -0.54786,0.0297 -2.23239,-0.42862 -1.5049,0.6668 0.4064,0.2286 0.9652,0.3429 1.6764,0.3429 0.6858,0 1.27,-0.0699 1.7526,-0.20955 0.4826,-0.1524 0.90805,-0.29845 1.27635,-0.43815 0.3683,-0.1524 0.71755,-0.2286 1.04775,-0.2286 0.2286,0 0.46355,0.0571 0.70485,0.17145 0.2413,0.1143 0.4445,0.2921 0.6096,0.5334 0.1651,0.2413 0.24765,0.56515 0.24765,0.97155 0,0.5588 -0.20955,1.06045 -0.62865,1.50495 -0.4191,0.4445 -1.0414,0.79375 -1.8669,1.04775 -0.8128,0.254 -1.82245,0.381 -3.02895,0.381 z m -1.1049,-6.64845 c 0.6096,0 1.13665,-0.14605 1.58115,-0.43815 0.4445,-0.3048 0.66675,-0.6731 0.66675,-1.1049 0,-0.2794 -0.1016,-0.508 -0.3048,-0.6858 -0.2032,-0.1778 -0.4826,-0.2667 -0.8382,-0.2667 -0.3937,0 -0.76835,0.0762 -1.12395,0.2286 -0.3429,0.1524 -0.6223,0.34925 -0.8382,0.59055 -0.2159,0.2413 -0.32385,0.508 -0.32385,0.8001 0,0.2794 0.1016,0.4953 0.3048,0.6477 0.2159,0.1524 0.508,0.2286 0.8763,0.2286 z m 11.78928,6.7056 c -1.8415,0 -3.19405,-0.4572 -4.05765,-1.3716 -0.8636,-0.9144 -1.2954,-2.1844 -1.2954,-3.81 0,-1.2573 0.254,-2.36855 0.762,-3.33375 0.5207,-0.9779 1.26365,-1.7399 2.22885,-2.286 0.9779,-0.5588 2.1463,-0.8382 3.5052,-0.8382 1.2446,0 2.1971,0.2413 2.8575,0.7239 0.6604,0.4826 0.9906,1.1557 0.9906,2.0193 0,0.6096 -0.2032,1.0922 -0.6096,1.4478 -0.3937,0.3429 -0.9652,0.51435 -1.7145,0.51435 -0.2921,0 -0.5715,-0.006 -0.8382,-0.019 -0.2667,-0.0254 -0.51435,-0.0445 -0.74295,-0.0572 -0.2286,-0.0127 -0.4445,-0.019 -0.6477,-0.019 -0.4699,0 -0.83185,0.1016 -1.08585,0.3048 -0.2413,0.2032 -0.36195,0.508 -0.36195,0.9144 0,0.3683 0.127,0.64135 0.381,0.81915 0.254,0.1778 0.5969,0.2667 1.0287,0.2667 0.1905,0 0.4064,-0.019 0.6477,-0.0571 0.254,-0.0508 0.5207,-0.0953 0.8001,-0.13335 0.2794,-0.0381 0.55245,-0.0572 0.81915,-0.0572 0.5842,0 1.0668,0.1651 1.4478,0.4953 0.381,0.3175 0.5715,0.7874 0.5715,1.4097 0,0.6223 -0.17145,1.1684 -0.51435,1.6383 -0.3429,0.4572 -0.8636,0.8128 -1.5621,1.0668 -0.6858,0.2413 -1.55575,0.36195 -2.60985,0.36195 z m 14.0372,-0.019 c -0.7366,0 -1.22555,-0.1651 -1.46685,-0.4953 -0.30657,-2.62146 -0.28502,0.4915 -3.94335,0.5525 -0.88888,0.0148 -1.6256,-0.1524 -2.2098,-0.4572 -0.5715,-0.3175 -1.0033,-0.73025 -1.2954,-1.23825 -0.2794,-0.508 -0.4191,-1.07315 -0.4191,-1.69545 0,-1.0541 0.38735,-1.88595 1.16205,-2.49555 0.7874,-0.6223 1.8288,-0.93345 3.1242,-0.93345 0.7874,0 1.45657,0.18801 2.07645,0.36195 1.03816,0.29131 0.9821,0.11685 0.3429,-1.143 -0.25244,-0.49756 -0.90805,-0.62865 -1.61925,-0.62865 -0.3048,0 -0.635,0.0508 -0.9906,0.1524 -0.3429,0.0889 -0.6985,0.18415 -1.0668,0.28575 -0.3683,0.0889 -0.74295,0.13335 -1.12395,0.13335 -0.508,0 -0.90805,-0.13335 -1.20015,-0.40005 -0.2794,-0.2794 -0.4191,-0.635 -0.4191,-1.0668 0,-0.5842 0.24765,-1.1049 0.74295,-1.5621 0.4953,-0.4572 1.14935,-0.81915 1.96215,-1.08585 0.8255,-0.2667 1.7145,-0.40005 2.667,-0.40005 1.2446,0 2.3241,0.23495 3.2385,0.70485 0.9144,0.4572 1.55575,1.1684 1.92405,2.1336 0.2794,0.6985 0.47625,1.4859 0.59055,2.3622 0.127,0.8763 0.1905,1.80975 0.1905,2.80035 0,1.0795 -0.0762,1.9177 -0.2286,2.5146 -0.1524,0.5969 -0.40005,1.016 -0.74295,1.2573 -0.3302,0.2286 -0.762,0.3429 -1.2954,0.3429 z m -3.7338,-2.7813 c 0.254,0 0.508,-0.0381 0.762,-0.1143 0.2667,-0.0889 0.48895,-0.20955 0.66675,-0.36195 0.1778,-0.1651 0.2667,-0.36195 0.2667,-0.59055 0,-0.2286 -0.0699,-0.41275 -0.20955,-0.55245 -0.1397,-0.1397 -0.3302,-0.2413 -0.5715,-0.3048 -0.2286,-0.0635 -0.47625,-0.0952 -0.74295,-0.0952 -0.4826,0 -0.86995,0.1016 -1.16205,0.3048 -0.2921,0.2032 -0.43815,0.4572 -0.43815,0.762 0,0.2794 0.127,0.508 0.381,0.6858 0.2667,0.1778 0.61595,0.2667 1.04775,0.2667 z"/>
+                <g
+                  id="g43"
+                  transform="translate(-0.52916667)">
+                  <path
+                    id="path37"
+                    style=" fill-opacity:1;fill-rule:evenodd;stroke-width:5.86072;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:0;paint-order:markers stroke fill"
+                    d="m 54.218495,106.7302 c -5.835748,0 -7.760251,2.08019 -7.76025,5.36918 -10e-7,3.28898 1.924502,6.54121 7.76025,6.54121 5.835748,0 10.566281,-2.66622 10.56628,-5.9552 10e-7,-3.28898 -4.730532,-5.95519 -10.56628,-5.95519 z m 3.922758,2.22726 c 2.12035,0 4.214727,2.21603 4.21473,3.52433 6e-6,1.30831 -1.834441,3.40858 -3.954797,3.40858 -2.120356,0 -2.528016,-1.93698 -2.528011,-3.24528 3e-6,-1.3083 0.147728,-3.68763 2.268078,-3.68763 z" />
+                  <path
+                    id="path38"
+                    style=" fill-opacity:1;fill-rule:evenodd;stroke-width:5.39841;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:0;paint-order:markers stroke fill"
+                    d="m 53.334312,116.50893 c -7.312137,0 -7.967985,4.51142 -7.96799,10.22625 -4e-6,5.71484 0.655846,10.46861 7.96799,10.46861 7.312144,0 13.240023,-4.63286 13.240018,-10.34769 -6e-6,-5.71482 -5.927882,-10.34717 -13.240018,-10.34717 z m 5.906099,4.37648 c 1.759442,0 5.149558,2.53475 5.149556,5.37693 -10e-7,1.26145 -0.146963,3.28959 -1.106909,4.57698 -1.202913,1.61323 -3.352974,2.36007 -4.331518,2.36007 -3.338003,0 -2.954857,-4.15224 -2.954859,-6.99441 -2e-6,-2.84218 1.484288,-5.31957 3.24373,-5.31957 z" />
+                  <path
+                    style="fill-opacity:1;fill-rule:evenodd;stroke: none;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+                    d="m 49.898184,113.60174 -7.628908,-0.22694 -3.357402,3.66286 0.152937,4.73813"
+                    id="path39" />
+                  <path
+                    style="fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:2.34643;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+                    d="m 51.972506,114.32189 -8.431429,2.81111 -1.837309,4.48546 2.525635,4.03008"
+                    id="path40" />
+                  <path
+                    style="fill-opacity:1;fill-rule:evenodd;stroke: none;stroke-width:1.61851;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+                    d="m 45.711238,112.67327 -5.424784,-1.44901 -3.021917,2.05679 -0.689505,3.41876"
+                    id="path41" />
+                  <ellipse
+                    style=" fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:2.06187;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+                    id="ellipse41"
+                    cx="108.97977"
+                    cy="-32.813671"
+                    rx="3.0935805"
+                    ry="5.8040161"
+                    transform="matrix(0.10968049,0.9939669,-0.99907331,0.04304095,0,0)" />
+                </g>
+              </g>
+            </svg>
+          </div>
+          <ul>
+            <li>
+              <a href="#">Quiénes somos</a>
+            </li>
+            <li>
+              <a href="#">Contáctanos</a>
+            </li>
+          </ul>
+        </div>
+    </div>
     <div class="licencia">
-      <img src="./assets/img/web/licencia.png" alt="">
+      <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/ " target="_blank">
+        <img src="./assets/img/web/licencia.png" alt="">
+      </a>
+      
     </div>
   </footer>
   
